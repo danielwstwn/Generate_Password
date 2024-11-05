@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, 
+	initial-scale=1.0"> 
+	<title>Password Generator - Jquery</title> 
+	<link rel="stylesheet" href="css/style.css"> 
+</head> 
+<body> 
+	<div id="container" class="container"> 
+		<h1 class="title">Kecerdasan Buatan</h1> 
+		<h3 class="subtitle">Membuat Password Secara Acak</h3> 
+		<div id="inputContainer" class="input-container"> 
+			<label class="label">Panjang Password :</label> 
+			<input type="number" min="8" max="32" value="12"
+				class="input" id="passwordLength" /> 
+		</div> 
+		<div id="checkboxContainer" class="checkbox-container"> 
+			<label><input type="checkbox" id="useSymbols" checked /> 
+				Simbol 
+			</label> 
+			<label><input type="checkbox" id="useNumbers" checked /> 
+				Nomer
+			</label> 
+			<label><input type="checkbox" id="useLowerCase" checked /> 
+				Huruf Kecil
+			</label> 
+			<label><input type="checkbox" id="useUpperCase" checked /> 
+				Huruf Besar
+			</label> 
+		</div> 
+		<button class="generate-button" id="generatePassword"> 
+			Buat Password
+		</button> 
+		<div id="generatedPasswordContainer"
+			class="generated-password-container"> 
+			<div class="input-container"> 
+				<label class="label">Password : </label> 
+				<input type="text" id="generatedPassword" readonly 
+					class="input" /> 
+				<button class="copy-button" id="copyToClipboard"> 
+					Copy 
+				</button> 
+			</div> 
+		</div> 
+		<p id="successMessage" class="success-message"></p> 
+	</div> 
+
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"> 
+	</script> 
+	<script src="js/script.js"></script> 
+</body> 
+
+</html>
+
+
+
+
